@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+main {
+  background-color: #f3f1ff;
+}
+/* nav style start */
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #562eff;
+  padding: 20px 0;
+}
+.idea {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 20px;
+}
+.logo {
+  width: 60px;
+  height: 70px;
+}
+.menu ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 40px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+/* nav style end */
+.center-part {
+  display: flex;
+  justify-content: center;
+  background-color: #f3f1ff;
+}
+.container1 {
+  width: 60%;
+  background-color: #ffffff;
+  margin-top: 20px;
+  padding: 20px;
+}
+.top{
+    color: #562EFF;
+    margin-left: 10%;
+}
+/* player style start */
+.player {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 90px 90px;
+  justify-content: space-between;
+  margin-left: 10%;
+}
+.player-logo {
+  width: 55px;
+  margin-right: 5%;
+}
+.name{
+    display: flex;
+    align-items: center;
+}
+hr{
+    width: 90%;
+    padding: 0;
+    margin: 20px auto;
+}
+/* Top blog style */
+.blog{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    grid-template-rows: 200px 200px;
+    margin-top: 20px;
+    margin-left: 10%;
+
+
+}
+.blog-logo{
+    width: 150px;
+    height: 120px;
+    margin-right: 20px;
+}
+.blog-description{
+    display: flex;
+    align-items: center;
+    
+
+}
+.by{
+  color: gray;
+  font-size: 16px;
+}
+/* footer style start */
+.course-img{
+  width: 300px;
+}
+.star{
+  width: 15px;
+}
+.course{
+  box-shadow: .5px 1px 10px rgba(0, 0, 0, .2);
+}
+.container2{
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  background-color: #ffffff;
+  margin-top: 20px;
+  padding: 20px;
+}
+.hour{
+  background-color: rgba(255, 0, 0, 0.185);
+  border-radius: 10px;
+  font-size: 16px;
+  margin-left: 70px;
+}
+@media screen and (max-width: 992px) {
+  .menu ul {
+    flex-direction: column;
+    gap: 0;
+  }
+  .menu{
+    padding: 0;
+  }
+  .container1{
+    width: 100%;
+  }
+  .container2{
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .player{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .blog{
+    grid-template-columns: 1fr;
+  }
+  .course{
+    margin: auto;
+  }
+}
